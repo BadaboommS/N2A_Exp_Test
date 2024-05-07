@@ -49,7 +49,7 @@
         transition: all 0.5s ease;
     }
     footer a:hover{
-        color: white;
+        color: lightgray;
         cursor: pointer;
         transition: all 0.5s ease;
     }

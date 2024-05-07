@@ -25,7 +25,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav align-items-center">
                         <li class="nav-item px-2">
                             <a class="nav-link text-primary" href="#">Accueil</a>
                         </li>
@@ -47,13 +47,12 @@
         </div>
     </header>
     <main>
-        <div class="container-fluid d-flex flex-column justify-content-center fill bg-info p-4">
-            <h2 class="text-center py-4"><b>LA</b> référence pour l'alternance des métiers du digital.</h2>
+        <div class="container-fluid d-flex flex-column justify-content-center fill p-4 inner-shadow text-dark">
+            <h2 class="text-center py-4 display-4">LA référence pour l'alternance des métiers du digital.</h2>
             <div class="row gap-5 m-2">
-                <div class="col-12 col-lg-5 py-2 d-flex flex-column text-center justify-content-center">
-                    <h2>Vous être <b>recruteur</b> ? Vous cherchez la nouvelle pépite pour votre entreprise?</h2>
-                    <p>Nous organisons le 23 septembre prochain, un salon dédié à l'alternance dans les métiers du digital.</p>
-                    <p>Venez rencontrer nos profils atypiques pour dénicher la perle rare!</p>
+                <div class="col-12 col-lg-5 py-2 d-flex flex-column text-center justify-content-center gap-2">
+                    <h2 class="py-2">Vous cherchez la nouvelle pépite pour votre entreprise?</h2>
+                    <p>Nous organisons le 23 septembre prochain la nouvelle édition du salon Alt&Go!</p>
                     <div class="list-group list-group-horizontal-md text-center py-md-4">
                         <a href="#presentation" class="list-group-item list-group-item-action">Présentation</a>
                         <a href="#programme" class="list-group-item list-group-item-action">Programme</a>
@@ -65,27 +64,18 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid d-flex flex-column justify-content-center fill p-4 bg-primary" id="presentation">
+        <div class="container-fluid d-flex flex-column justify-content-center fill p-4 inner-shadow text-dark" id="presentation">
             <div class="row">
-                <div class="col-12 col-lg-8 offset-lg-1">
-                    <div class="row gap-5 m-5">
-                        <div class="col-12 col-lg-4 d-none d-lg-block align-self-center">
-                            <img src="https://itsocial.fr/wp-content/uploads/2022/03/Enseignement-hybride-Digital-Wallonia-1024x614-1.jpg" alt="Evenement alternance" style="width:100%"/>
-                        </div>
-                        <div class="col-12 col-lg-5 py-2">
-                            <h3>Test</h3>
-                        </div>
-                    </div>
-                    <div class="row gap-5 m-5">
-                        <div class="col-12 col-lg-5 py-2">
-                            <h3>Test</h3>
-                        </div>
-                        <div class="col-12 col-lg-6 d-none d-lg-block align-self-center">
-                            <img src="https://itsocial.fr/wp-content/uploads/2022/03/Enseignement-hybride-Digital-Wallonia-1024x614-1.jpg" alt="Evenement alternance" style="width:100%"/>
-                        </div>
-                    </div>
+                <div class="col-12 col-lg-8 offset-lg-2 text-center shadow-lg py-2 my-4">
+                    <h2 class="py-2 display-4">Informations</h2>
+                    <h3>Salon Alt&Go</h3>
+                    <h4><u>Objectif:</u> Se rencontrer autour d'une passion commune!</h4>
+                    <p>-La programmation et l'univers du digital-</p>
+                    <p><u>Date:</u> <span class="canSelect">23 septembre 2024</span> - 8h - 18h</p>
                 </div>
-                <div class="col-lg-3 d-none d-lg-block pt-5 align-self-center rounded shadow bg-light py-2">
+            </div>
+            <div class="row">
+                <div class="col-lg-3 d-none d-lg-block pt-5 align-self-center rounded shadow py-2">
                     <div class="text-center">
                         <h3>Ils seront présents!</h3>
                         <div class="img_container">
@@ -97,52 +87,128 @@
                         <p>Venez les rencontrer !</p>
                     </div>
                 </div>
+                <div class="col-12 col-lg-9">
+                    <div class="row gap-5 m-5 align-items-center justify-content-center">
+                        <div class="col-12 col-lg-4 d-none d-lg-block align-self-center">
+                            <img src="/img/code.jpg" alt="Code" class="rounded shadow" style="width:100%"/>
+                        </div>
+                        <div class="col-12 col-lg-5 py-2 text-center">
+                            <h3>-Conférences & Réflexions-</h3>
+                            <p>Ouvrir des reflexions et permettre à toutes les générations d'échanger autours de thématiques actuelles</p>
+                        </div>
+                    </div>
+                    <div class="row gap-5 m-5 align-items-center justify-content-center">
+                        <div class="col-12 col-lg-5 py-2 text-center">
+                            <h3>-JobDating & Rencontres-</h3>
+                            <p>Permettre aux candidats et aux recruteurs d'échanger sur leurs passions</p>
+                        </div>
+                        <div class="col-12 col-lg-5 d-none d-lg-block align-self-center">
+                            <img src="/img/grab-a-coffee.jpg" alt="Coffee" class="rounded shadow" style="width:100%"/>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
         </div>
-        <div class="container-fluid d-flex flex-column fill bg-info p-4" id="programme">
-            <div class="text-center py-5">
-                <h3>Programme de la journée:</h3>
-                <p>Journée du 23 septembre 2024: 9h - 18h</p>
+        <div class="container-fluid d-flex flex-column fill p-4 inner-shadow text-dark" id="programme">
+            <div class="row text-center py-5 justify-content-center">
+                <h2 class="col-8 col-sm-6 col-md-4 col-xl-3 display-4 shadow rounded py-3">Programme</h2>
             </div>
-            <div class="row gap-5 justify-content-end align-items-start h-50">
-                <div class="col-12 col-md-4">
+            <div class="row gap-5 justify-content-end align-items-start h-75 py-5" style="min-height:50vh">
+                <div class="col-12 col-md-3">
                   <div class="list-group text-center" id="list-tab" role="tablist">
-                    <a class="list-group-item list-group-item-action active" id="list-accueil-list" data-bs-toggle="list" href="#list-accueil" role="tab" aria-controls="accueil">Accueil</a>
-                    <a class="list-group-item list-group-item-action" id="list-pres-list" data-bs-toggle="list" href="#list-pres" role="tab" aria-controls="pres">Conférences</a>
-                    <a class="list-group-item list-group-item-action" id="list-repas-list" data-bs-toggle="list" href="#list-repas" role="tab" aria-controls="repas">Repas</a>
-                    <a class="list-group-item list-group-item-action" id="list-jobDating-list" data-bs-toggle="list" href="#list-jobDating" role="tab" aria-controls="jobDating">Job Dating</a>
+                    <a class="list-group-item list-group-item-action active" id="list-accueil-list" data-bs-toggle="list" href="#list-accueil" role="tab" aria-controls="accueil">8h - Accueil</a>
+                    <a class="list-group-item list-group-item-action" id="list-pres-list" data-bs-toggle="list" href="#list-pres" role="tab" aria-controls="pres">9h - Conférences</a>
+                    <a class="list-group-item list-group-item-action" id="list-repas-list" data-bs-toggle="list" href="#list-repas" role="tab" aria-controls="repas">12h - Repas</a>
+                    <a class="list-group-item list-group-item-action" id="list-jobDating-list" data-bs-toggle="list" href="#list-jobDating" role="tab" aria-controls="jobDating">14h - Job Dating</a>
                   </div>
                 </div>
-                <div class="col-12 col-md-6 text-center text-md-start">
+                <div class="col-12 col-md-7 text-center text-md-start">
                   <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="list-accueil" role="tabpanel" aria-labelledby="list-accueil-list">
-                        <h3>8h - 9h: Accueil des participants</h3>
+                    <div class="tab-pane fade show active shadow rounded p-2" id="list-accueil" role="tabpanel" aria-labelledby="list-accueil-list">
+                        <h3 class="py-2"><u>8h - 9h:</u> Accueil des participants</h3>
                         <p>Petit déjeuner sur place!</p>
                     </div>
-                    <div class="tab-pane fade" id="list-pres" role="tabpanel" aria-labelledby="list-pres-list">
-                        <h3>9h - 12h: Conférences et intervention d'invités autour de l'univers du digital</h3>
-                        <div>
+                    <div class="tab-pane fade shadow rounded p-2" id="list-pres" role="tabpanel" aria-labelledby="list-pres-list">
+                        <h3 class="py-2"><u>9h - 12h:</u> Conférences</h3>
+                        <div class="g-0">
                             <p>9h - 10h: "Outils, IA et Framework: Pourquoi apprendre le code en 2024?" - John Carmack</p>
-                            <p>10h - 11h: "Réflexion Post-Covid: Quelle place pour le Télétravail dans les métiers du digital?" - John Doe</p>
+                            <p>10h - 11h: "Réflexion Post-Covid: Quelle place pour le Télétravail?" - John Doe</p>
                             <p>11h - 12h: "Faire ses premiers pas dans les métiers du web. Pistes et conseils." - Alan Smithee </p>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="list-repas" role="tabpanel" aria-labelledby="list-repas-list">
-                        <h3>12h - 14h: Repas (offert par l'organisme du salon)</h3>
+                    <div class="tab-pane fade shadow rounded p-2" id="list-repas" role="tabpanel" aria-labelledby="list-repas-list">
+                        <h3 class="py-2"><u>12h - 14h:</u> Repas (offert par l'organisme du salon)</h3>
                         <p>Ouverture des espaces de discussion.</p>
                         <p><b>NB:</b> n'hésitez pas à rencontrer les candidats, recruteurs ou intervenants !</p>
                     </div>
-                    <div class="tab-pane fade" id="list-jobDating" role="tabpanel" aria-labelledby="list-jobDating-list">
-                        <h3>14h - 18h: Job Dating</h3>
-                        <p>Rencontrez les candidats de vos rêves et créez des opportunités professionnelles !</p>
+                    <div class="tab-pane fade shadow rounded p-2" id="list-jobDating" role="tabpanel" aria-labelledby="list-jobDating-list">
+                        <h3 class="py-2"><u>14h - 18h:</u> Job Dating</h3>
+                        <p>Rencontrez le candidat de vos rêves et créez des opportunités professionnelles !</p>
                     </div>
                   </div>
                 </div>
             </div>
+            <div class="d-flex justify-content-center pb-5">
+                <img src="https://keystoneacademic-res.cloudinary.com/image/upload/f_auto/q_auto/g_auto/w_780/dpr_2.0/element/20/203335_203230_cover_photo-MDX-Mauritius-Campus.png" class="rounded d-none d-md-block w-75" alt="campus" style="max-height:450px"/>
+            </div>
         </div>
-        <div class="container-fluid d-flex flex-column justify-content-center fill bg-primary p-4" id="contact">
-            <div class="row gap-5 m-2">
+        <div class="container-fluid d-flex flex-column justify-content-center fill p-4 gap-4 inner-shadow text-light" id="contact">
+            <div class="row text-center justify-content-center">
+                <h2 class="col-4 col-xl-2 display-4 shadow rounded">Contact</h2>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6 text-center py-4">
+                    <h3>Vous désirez participer?</h3>
+                    <p>N'hésitez plus et réservez votre place dès maintenant!</p>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="row gap-5 m-2 py-2">
+                        <div class="col-12 col-lg-10 offset-lg-1">
+                            <div class="text-center">
+                                <div class="d-flex flex-row justify-content-center align-items-center gap-2">
+                                    <h3 class="py-2">Réserver ma place:</h3>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-light btn-lg border rounded" data-bs-toggle="modal" data-bs-target="#exampleModal">Ici</button>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header text-center">
+                                            <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Reservation</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                            <form>
+                                                <div class="row justify-content-center gap-3">
+                                                    <div class="col-12">
+                                                        <input type="text" id="lname" name="lname" class="form-control" placeholder="Nom" required>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <input type="text" id="email" name="email" class="form-control" placeholder="Email" required>                          
+                                                    </div>
+                                                </div>
+                                                <div class="row justify-content-center gap-4 py-2">
+                                                    <button type="submit" class="col-5 btn btn-primary">Valider</button>
+                                                    <button type="button" class="col-5 btn btn-danger" data-bs-dismiss="modal">Annuler</button>
+                                                </div>
+                                            </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center shadow">
+                <h3>Pour plus d'informations, n'hésitez pas à contacter l'organisateur:</h3>
+                <div class="d-flex flex-column flex-md-row gap-2 gap-md-5 justify-content-center">
+                    <p><span class="canSelect">Yann Lindeboom</span></p>
+                    <p><u>Tel:</u> <span class="canSelect">06.68.**.**.**</span></p>
+                    <p><u>Mail:</u> <span class="canSelect">yann***********@gmail.com</span></p>
+                </div>
             </div>
         </div>
     </main>
@@ -154,13 +220,13 @@
             </div>
             <div class="col-6 align-items-end d-flex flex-row justify-content-center">
                 <ul class="list-group list-group-flush list-group-horizontal">
-                    <a href="" class="list-group-item">
+                    <a href="" class="list-group-item" title="LinkedIn" target="_blank">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
-                    <a href="" class="list-group-item">
+                    <a href="" class="list-group-item" title="Facebook" target="_blank">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
-                    <a href="" class="list-group-item">
+                    <a href="" class="list-group-item" title="X (Twitter)" target="_blank">
                         <i class="fa-brands fa-x-twitter"></i>
                     </a>
                 </ul>
