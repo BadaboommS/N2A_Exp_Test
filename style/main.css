@@ -45,3 +45,40 @@ header{
 .text-black{
     text-shadow: none;
 }
+
+/* On scroll animations */
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    top: 45%;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: calc(20px + 0.5vw);
+    transition: all 0.5s ease;
+}
+  
+#myBtn:hover {
+    background-color: lightgray;
+    padding: 14px;
+    border: 1px solid black;
+    color: black;
+}
