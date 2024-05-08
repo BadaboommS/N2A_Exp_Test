@@ -24,13 +24,11 @@ async function handleSubmit(event){
         name: name,
         email: email
     };
-
+    
     //http://test-technique.pexa4457.odns.fr/register
     try{
         const res = await fetch('http://test-technique.pexa4457.odns.fr/register', {
             method: "POST",
-            mode: 'no-cors',
-            credentials: 'include',
             headers: {
                 'Authorization': 'SuperSecretToken1234',
                 'Content-type': 'application/json'
