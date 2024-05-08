@@ -29,7 +29,6 @@ async function handleSubmit(event){
     try{
         const res = await fetch('http://test-technique.pexa4457.odns.fr/register', {
             method: "POST",
-            mode: "cors",
             headers: {
                 'Authorization': 'SuperSecretToken1234',
                 'Content-type': 'application/json'
