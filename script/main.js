@@ -27,8 +27,14 @@ async function handleSubmit(event){
     
     //http://test-technique.pexa4457.odns.fr/register
     try{
-        const res = await fetch('http://test-technique.pexa4457.odns.fr/register', {
+        /* const proxyUrl = "http://localhost:8080/";
+        const baseUrl = 'http://test-technique.pexa4457.odns.fr/register';
+        const endPoint = proxyUrl + baseUrl; */
+        const endPoint = 'http://test-technique.pexa4457.odns.fr/register';
+        const res = await fetch(endPoint, {
             method: "POST",
+            mode: "cors",
+            cache: "no-cache",
             headers: {
                 'Authorization': 'SuperSecretToken1234',
                 'Content-type': 'application/json'
@@ -37,9 +43,23 @@ async function handleSubmit(event){
         });
         const data = await res.json();
         console.log(data);
+
+        //validate popup
+        requestPopupValidate.style.display = "block";
+        setTimeout(() => {
+            requestPopupValidate.style.display = "none";
+        }, 2000);
+
     }catch(error){
         console.log(error);
+
+        //error popup
+        requestPopupError.style.display = "block";
+        setTimeout(() => {
+            requestPopupError.style.display = "none";
+        }, 2000);
     }
+    modalCloseBtn.click();
     return null;
 }
 

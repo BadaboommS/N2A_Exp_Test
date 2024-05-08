@@ -59,6 +59,15 @@ header{
     transform: translateX(0);
 }
 
+.requestPopup{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: calc(20px + 0.4vw);
+}
+
 #myBtn {
     display: none;
     position: fixed;

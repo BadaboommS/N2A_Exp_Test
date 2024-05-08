@@ -191,7 +191,7 @@
                                                 </div>
                                                 <div class="row justify-content-center gap-4 py-2">
                                                     <button type="submit" class="col-5 btn btn-primary">Valider</button>
-                                                    <button type="button" class="col-5 btn btn-danger" data-bs-dismiss="modal">Annuler</button>
+                                                    <button type="button" class="col-5 btn btn-danger" data-bs-dismiss="modal" id="modalCloseBtn">Annuler</button>
                                                 </div>
                                             </form>
                                             </div>
@@ -234,6 +234,12 @@
             </div>
         </div>
     </footer>
+    <div id="requestPopupValidate" class="requestPopup bg-success p-2 rounded">
+        <p class="m-1 text-white">Reservation effectuée !</p>
+    </div>
+    <div id="requestPopupError" class="requestPopup bg-danger p-2 rounded">
+        <p class="m-1 text-white">Reservation Error</p>
+    </div>
     <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
 </body>
 </html>
