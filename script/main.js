@@ -7,11 +7,6 @@ function validateEmail(email) {
 async function handleSubmit(event){
     event.preventDefault();
     
-    const conf = confirm("Valider la modification de réservation?");
-    if(!conf){
-        return null;
-    };
-
     const name = event.target.name.value;
     const email = event.target.email.value;
 
@@ -20,6 +15,11 @@ async function handleSubmit(event){
         return null;
     }
 
+    const conf = confirm("Valider la modification de réservation?");
+    if(!conf){
+        return null;
+    };
+
     const newRes = {
         name: name,
         email: email
@@ -27,9 +27,9 @@ async function handleSubmit(event){
 
     //http://test-technique.pexa4457.odns.fr/register
     try{
-        const res = await fetch('', {
+        const res = await fetch('http://test-technique.pexa4457.odns.fr/register', {
             method: "POST",
-            mode: 'cors',
+            mode: 'no-cors',
             credentials: 'include',
             headers: {
                 'Authorization': 'SuperSecretToken1234',
@@ -39,12 +39,10 @@ async function handleSubmit(event){
         });
         const data = await res.json();
         console.log(data);
-
-        return data;
     }catch(error){
         console.log(error);
     }
-    return false;
+    return null;
 }
 
 //add event listener to form
